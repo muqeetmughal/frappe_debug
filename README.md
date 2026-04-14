@@ -1,40 +1,35 @@
-### Frappe Debug
+# Frappe Debug
 
-Make Debugging Easy in Frappe Apps
+Make debugging easy in Frappe apps.
 
-### Installation
+A lightweight developer toolbox for Frappe / ERPNext that helps you inspect fields, reveal hidden controls, log live values, and debug forms faster.
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+---
+
+## Repository
+
+:contentReference[oaicite:0]{index=0}: https://github.com/muqeetmughal/frappe_debug.git
+
+---
+
+# Features
+
+- Field Name Overlay on hover
+- Field Type Indicator (`Data`, `Link`, `Select`, `Table`, etc.)
+- Copy Field Name button
+- Highlight Custom Fields (`custom_*`)
+- Show Hidden Fields
+- Real-time Value Logger
+- Dynamic DOM support using MutationObserver
+- Lightweight and developer-friendly
+
+---
+
+# Installation
+
+You can install this app using the :contentReference[oaicite:1]{index=1} CLI.
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch version-16
+bench get-app https://github.com/muqeetmughal/frappe_debug.git --branch version-16
 bench install-app frappe_debug
-```
-
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/frappe_debug
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-### CI
-
-This app can use GitHub Actions for CI. The following workflows are configured:
-
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
-
-
-### License
-
-mit
