@@ -26,7 +26,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/frappe_debug/css/frappe_debug.css"
-# app_include_js = "/assets/frappe_debug/js/frappe_debug.js"
+app_include_js = "/assets/frappe_debug/js/frappe_debug.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/frappe_debug/css/frappe_debug.css"
